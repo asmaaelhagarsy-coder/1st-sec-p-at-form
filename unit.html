@@ -1,0 +1,802 @@
+<!doctype html><html><head><meta charset="utf-8"><title>Unit 6</title></head><body><section id="vocab" class="card"><h2>Unit 6 – Vocabulary</h2><pre class="card">&lt;!DOCTYPE html&gt;
+&lt;html lang="en" dir="ltr"&gt;
+&lt;head&gt;
+&lt;meta charset="UTF-8" /&gt;
+&lt;meta name="viewport" content="width=device-width, initial-scale=1" /&gt;
+&lt;title&gt;Unit 6 — Job Hunting | Interactive Lessons Hub (v1)&lt;/title&gt;
+&lt;style&gt;
+  :root{ --bg:#f6f7fb; --text:#0b1220; --pill:#e2e8f0; --pillActive:#fde68a; --cardShadow:0 8px 20px rgba(0,0,0,.08); --good:#22c55e; --bad:#ef4444; --brand1:#34d399; --brand2:#60a5fa; }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--text);font-family:"Tahoma",system-ui,Segoe UI,Arial}
+  header{background:linear-gradient(90deg,var(--brand1),var(--brand2)); color:#0b1220; padding:16px 14px; position:sticky; top:0; z-index:30}
+  .headWrap{max-width:1100px;margin:0 auto;display:flex;gap:12px;align-items:center}
+  .brand{width:44px;height:44px;border-radius:14px;background:conic-gradient(from 200deg,var(--brand1),var(--brand2),#f59e0b,#a78bfa,var(--brand1))}
+  h1{margin:0;font-size:20px}
+  small{opacity:.8}
+
+  .container{max-width:1100px;margin:14px auto;padding:0 12px}
+  .lessonGrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:10px}
+  .lessonCard{background:#fff;border-radius:16px;padding:14px;text-align:center;font-weight:900;box-shadow:var(--cardShadow);cursor:pointer;border:1px solid #eef2ff}
+  .lessonCard.active{background:#fde68a}
+  .lessonCard.unit{background:#e0f2fe}
+
+  .tabs{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}
+  .tabBtn{background:var(--pill); border:none; border-radius:999px; padding:10px 14px; font-weight:900; cursor:pointer; color:#111827}
+  .tabBtn.active{background:var(--pillActive)}
+
+  .panel{background:#fff;border:1px solid #e5e7eb;border-radius:16px;box-shadow:var(--cardShadow);padding:12px;margin-top:12px}
+
+  .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px}
+  .card{border-radius:18px;padding:14px;box-shadow:var(--cardShadow);border:1px solid #eef2ff}
+  .card:nth-child(6n+1){background:#ffd1d1}
+  .card:nth-child(6n+2){background:#ffe1af}
+  .card:nth-child(6n+3){background:#fff4b3}
+  .card:nth-child(6n+4){background:#c9f7dc}
+  .card:nth-child(6n+5){background:#d7ecff}
+  .card:nth-child(6n+6){background:#f3d9ff}
+  .en{font-size:22px;font-weight:900}
+  .ar{margin-top:4px;color:#1f2937}
+  .ex{margin-top:8px;color:#0f172a;opacity:.9}
+  .actions{display:flex;gap:8px;margin-top:10px}
+  .btn{border:none;border-radius:12px;padding:10px 12px;font-weight:900;cursor:pointer}
+  .primary{background:#22c55e;color:#063019}
+  .secondary{background:#dbeafe;color:#0b1220}
+
+  .box{background:#f8fafc;border:1px dashed #cbd5e1;border-radius:14px;padding:12px}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+  .draggable{background:#fde68a;padding:12px;border-radius:12px;text-align:center;font-weight:900;cursor:grab}
+  .dropzone{background:#e2e8f0;padding:12px;border-radius:12px;min-height:52px;border:2px dashed #94a3b8;text-align:center}
+  .dropzone.correct{background:#86efac;border-color:#16a34a}
+
+  .options{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:10px}
+  .opt{border:none;border-radius:12px;padding:14px;font-weight:900;cursor:pointer;color:#0b1220}
+  .opt.correct{outline:4px solid var(--good)}
+  .opt.wrong{outline:4px solid var(--bad); opacity:.75}
+
+  .readingLine{display:flex;justify-content:space-between;align-items:center;background:#f8fafc;border:1px solid #e5e7eb;border-radius:12px;padding:12px;margin-top:8px}
+
+  .confetti{position:fixed;inset:0;pointer-events:none;z-index:100}
+  .piece{position:absolute;width:10px;height:14px;animation:fall 1800ms linear forwards}
+  @keyframes fall{to{transform:translateY(100vh) rotate(720deg);opacity:.25}}
+
+  .toolbar{display:flex;gap:8px;margin:8px 0}
+
+  .grammarBox{display:grid;gap:10px}
+  .gArt{background:#eff6ff;color:#1e40af;border-radius:10px;padding:10px}
+  .gUse{background:#f5f3ff;color:#6d28d9;border-radius:10px;padding:10px}
+  .gTips{background:#ecfdf5;color:#065f46;border-radius:10px;padding:10px}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;header&gt;
+  &lt;div class="headWrap"&gt;
+    &lt;div class="brand"&gt;&lt;/div&gt;
+    &lt;div&gt;
+      &lt;h1&gt;Unit 6 — Job Hunting | All‑in‑One Lessons Hub&lt;/h1&gt;
+      &lt;small&gt;Prepared by: Ms Asmaa Mahmoud El‑Hagrasy&lt;/small&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/header&gt;
+
+&lt;div class="container"&gt;
+  &lt;div id="lessonGrid" class="lessonGrid"&gt;&lt;/div&gt;
+  &lt;div id="tabs" class="tabs"&gt;&lt;/div&gt;
+  &lt;div id="tabContent"&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="confetti" id="confetti"&gt;&lt;/div&gt;
+
+&lt;script&gt;
+function shuffle(arr){ const a=[...arr]; for(let i=a.length-1;i&gt;0;i--){ const j=Math.floor(Math.random()*(i+1)); [a[i],a[j]]=[a[j],a[i]]; } return a; }
+let voices=[]; function loadVoices(){ voices=speechSynthesis.getVoices(); } window.speechSynthesis.onvoiceschanged=loadVoices; loadVoices();
+function pickBritish(){ const c=(voices||[]).filter(v=&gt;/en-GB|UK|Brit/i.test(v.lang+v.name)); const f=c.find(v=&gt;/Female|Sonia|Hazel|Libby|Serena|Zira|Amy|Emma/i.test(v.name)); return f||c[0]||null; }
+function speak(text, rate=.82){ const u=new SpeechSynthesisUtterance(text); u.rate=rate; u.pitch=1.05; u.lang='en-GB'; const v=pickBritish(); if(v) u.voice=v; speechSynthesis.cancel(); speechSynthesis.speak(u); }
+function cheer(){ const ctx=new (window.AudioContext||window.webkitAudioContext)(); const o=ctx.createOscillator(); const g=ctx.createGain(); o.type='triangle'; o.frequency.value=640; g.gain.value=.06; o.connect(g).connect(ctx.destination); o.start(); setTimeout(()=&gt;o.frequency.value=840,160); setTimeout(()=&gt;o.stop(),360); confetti(); }
+function confetti(){ const c=document.getElementById('confetti'); c.innerHTML=''; for(let i=0;i&lt;40;i++){ const p=document.createElement('div'); p.className='piece'; p.style.left=Math.random()*100+'vw'; p.style.top='-10px'; p.style.background=`hsl(${Math.random()*360},90%,60%)`; p.style.animationDuration=(1200+Math.random()*1200)+'ms'; c.appendChild(p);} setTimeout(()=&gt;c.innerHTML='',2000) }
+
+const lessons = [
+  { id:1, title:'Lesson 1 — The Modern Job Hunt',
+    vocab:[
+      {en:'resume', ar:'سيرة ذاتية', ex:'A strong resume can help you get interviews.'},
+      {en:'polished', ar:'مصقول/احترافي', ex:'Employers prefer a polished resume.'},
+      {en:'footprint', ar:'بصمة رقمية', ex:'Your digital footprint affects job chances.'},
+      {en:'association', ar:'جمعية/رابطة', ex:'Joining an association helps networking.'},
+      {en:'generic', ar:'عام/غير محدد', ex:'Avoid sending a generic resume.'},
+      {en:'approach', ar:'منهج/طريقة', ex:'Choose the right approach for interviews.'},
+      {en:'attitude', ar:'اتّجاه/سلوك', ex:'A positive attitude is important.'},
+    ],
+    reading:[
+      'Today job seekers build a professional online presence.',
+      'Networking and personalized applications increase success.',
+      'Modern interviews can be phone, video, or skills-based.',
+      'Keeping a positive attitude helps in the long run.'
+    ]
+  },
+  { id:2, title:'Lesson 2 — Job Interview (Listening)',
+    vocab:[
+      {en:'department', ar:'قسم', ex:'She works in the sales department.'},
+      {en:'ground', ar:'أساس/أرضية مشتركة', ex:'Find common ground with the team.'},
+      {en:'silos', ar:'عزلة الفرق', ex:'Break down silos to share information.'},
+      {en:'impressive', ar:'مُلفِت/مثير للإعجاب', ex:'He gave an impressive presentation.'},
+      {en:'independently', ar:'بشكل مستقل', ex:'She completes tasks independently.'},
+      {en:'stakeholders', ar:'أصحاب المصلحة', ex:'Stakeholders care about project outcomes.'},
+      {en:'check-ins', ar:'اجتماعات متابعة', ex:'Weekly check-ins track progress.'},
+      {en:'innovative', ar:'مبتكر', ex:'They proposed an innovative idea.'},
+      {en:'implementing', ar:'تنفيذ', ex:'We are implementing the plan.'},
+      {en:'mentor', ar:'مُرشِد', ex:'A mentor supports junior staff.'},
+    ],
+    reading:[
+      'The candidate discusses strengths and future goals.',
+      'Projects require collaboration across departments.',
+      'Use STAR method to answer behavioural questions.'
+    ]
+  },
+  { id:3, title:'Lesson 3 — Career Decisions (Grammar: Articles)', grammar:true,
+    vocab:[
+      {en:'article (a/an/the)', ar:'أداة التعريف/النكرة', ex:'Use a/an/the correctly with nouns.'},
+      {en:'research', ar:'بحث', ex:'Research helps students choose a career.'},
+      {en:'internship', ar:'تدريب', ex:'Internships shape career goals.'},
+      {en:'volunteering', ar:'تطوّع', ex:'Volunteering gives real experience.'},
+    ],
+    reading:[
+      'Self-reflection identifies strengths.',
+      'Research and internships guide better decisions.',
+      'Use a/an/the, or no article, based on context.'
+    ]
+  },
+  { id:4, title:'Lesson 4 — My Resume (Reading)',
+    vocab:[
+      {en:'analysis', ar:'تحليل', ex:'Data analysis improves campaigns.'},
+      {en:'coordinator', ar:'منسّق', ex:'The coordinator keeps teams aligned.'},
+      {en:'promotional', ar:'ترويجي', ex:'They ran promotional activities.'},
+      {en:'collaborated', ar:'تعاون', ex:'She collaborated with the design team.'},
+      {en:'managed', ar:'أدار', ex:'He managed social media accounts.'},
+      {en:'organized', ar:'نظّم', ex:'They organized monthly meetings.'},
+      {en:'assisted', ar:'ساعد', ex:'He assisted customers at the desk.'},
+      {en:'analyzed', ar:'حلّل', ex:'They analyzed the budget.'},
+    ],
+    reading:[
+      'Professional summary highlights skills and achievements.',
+      'Work experience lists responsibilities and results.',
+      'Skills include content creation and data analysis.'
+    ]
+  },
+  { id:5, title:'Lesson 5 — Curriculum Vitae (CV)',
+    vocab:[
+      {en:'personal statement', ar:'بيان شخصي', ex:'Write a short personal statement.'},
+      {en:'education', ar:'تعليم', ex:'List education in reverse chronological order.'},
+      {en:'work experience', ar:'خبرة عملية', ex:'Include relevant jobs and internships.'},
+      {en:'skills', ar:'مهارات', ex:'Add technical and soft skills.'},
+      {en:'references', ar:'مرجعيات', ex:'Provide references if requested.'},
+    ],
+    reading:[
+      'A good CV is clear, short, and relevant.',
+      'Use action verbs to describe achievements.',
+      'Update the CV regularly.'
+    ]
+  }
+];
+
+const BASE_TABS = ['Exam','Games','Reading','Vocabulary'];
+let current = { type:'lesson', id:1, tab:'Vocabulary' };
+
+const lessonGrid = document.getElementById('lessonGrid');
+function renderLessonCards(){ lessonGrid.innerHTML=''; lessons.forEach(ls=&gt;{ const card=document.createElement('div'); card.className='lessonCard'; card.textContent=ls.title; card.onclick=()=&gt;{ current={type:'lesson', id:ls.id, tab: ls.grammar? 'Grammar':'Vocabulary'}; renderTabs(); renderTabContent(); highlightCards(); }; if(current.type==='lesson' && current.id===ls.id) card.classList.add('active'); lessonGrid.appendChild(card); }); const unit=document.createElement('div'); unit.className='lessonCard unit'; unit.textContent='Unit Exam (from page)'; unit.onclick=()=&gt;{ current={type:'unitExam', id:'unit', tab:null}; renderTabs(); renderTabContent(); highlightCards(); }; lessonGrid.appendChild(unit); }
+function highlightCards(){ document.querySelectorAll('.lessonCard').forEach((c,i)=&gt;{ const isUnit=c.classList.contains('unit'); if(!isUnit){ const id=lessons[i].id; c.classList.toggle('active', current.type==='lesson' && current.id===id) } else { c.classList.toggle('active', current.type==='unitExam'); } }); }
+
+const tabsWrap = document.getElementById('tabs');
+function renderTabs(){ tabsWrap.innerHTML=''; if(current.type==='unitExam'){ const b=document.createElement('button'); b.className='tabBtn active'; b.textContent='Unit Exam'; tabsWrap.appendChild(b); return; } const ls=lessons.find(x=&gt;x.id===current.id); const tabs=[...BASE_TABS]; if(ls.grammar){ tabs.push('Grammar','Practice'); } tabs.forEach(name=&gt;{ const b=document.createElement('button'); b.className='tabBtn'; b.textContent=name; b.onclick=()=&gt;{ if(name==='Exam'){ current={type:'unitExam', id:'unit', tab:null}; renderTabs(); renderTabContent(); highlightCards(); } else { current.tab=name; renderTabContent(); setActiveTab(); } }; tabsWrap.appendChild(b); }); current.tab = current.tab || (ls.grammar?'Grammar':'Vocabulary'); setActiveTab(); }
+function setActiveTab(){ document.querySelectorAll('.tabBtn').forEach(b=&gt; b.classList.toggle('active', b.textContent===current.tab)); }
+
+const content = document.getElementById('tabContent');
+function renderTabContent(){ content.innerHTML=''; if(current.type==='unitExam') return renderUnitExam(); const ls=lessons.find(x=&gt;x.id===current.id); if(current.tab==='Vocabulary') return renderVocabulary(ls); if(current.tab==='Reading') return renderReading(ls); if(current.tab==='Games') return renderGames(ls); if(current.tab==='Grammar') return renderGrammar(ls); if(current.tab==='Practice') return renderPractice(ls); }
+
+function renderVocabulary(ls){ const p=document.createElement('div'); p.className='panel'; p.innerHTML='&lt;h2&gt;Vocabulary (EN word + AR meaning) + Dictation&lt;/h2&gt;'; const grid=document.createElement('div'); grid.className='cards'; p.appendChild(grid); ls.vocab.forEach(item=&gt;{ const card=document.createElement('div'); card.className='card'; card.innerHTML=`&lt;div class='en'&gt;${item.en}&lt;/div&gt;&lt;div class='ar'&gt;${item.ar}&lt;/div&gt;&lt;div class='ex'&gt;&lt;i&gt;${item.ex}&lt;/i&gt;&lt;/div&gt;`; const actions=document.createElement('div'); actions.className='actions'; const speakWord=document.createElement('button'); speakWord.className='btn primary'; speakWord.textContent='Pronounce ▶'; speakWord.onclick=()=&gt;speak(item.en,.85); const speakEx=document.createElement('button'); speakEx.className='btn secondary'; speakEx.textContent='Speak Example 🎧'; speakEx.onclick=()=&gt;speak(item.ex,.88); actions.appendChild(speakEx); actions.appendChild(speakWord); card.appendChild(actions); grid.appendChild(card); });
+  const dict=document.createElement('div'); dict.className='panel'; dict.innerHTML = `&lt;h3&gt;✍️ Dictation (AR → EN)&lt;/h3&gt;&lt;div class='box'&gt;Type the &lt;b&gt;English word&lt;/b&gt; when I show the &lt;b&gt;Arabic word&lt;/b&gt;. The word will be pronounced &lt;b&gt;after&lt;/b&gt; a correct answer.&lt;/div&gt;`; const start=document.createElement('button'); start.className='btn primary'; start.textContent='Start Dictation'; dict.appendChild(start); const host=document.createElement('div'); host.className='box'; dict.appendChild(host); let score=0,n=0; start.onclick=()=&gt;{ score=0;n=0; nextQ(); }; function nextQ(){ host.innerHTML=''; const pool=[...ls.vocab]; const q=pool[Math.floor(Math.random()*pool.length)]; n++; const info=document.createElement('div'); info.innerHTML=`&lt;b&gt;الكلمة بالعربي:&lt;/b&gt; ${q.ar}`; host.appendChild(info); const inp=document.createElement('input'); inp.type='text'; inp.placeholder='Type the English word here'; inp.style.cssText='width:100%;padding:10px;margin-top:8px;border-radius:10px;border:1px solid #cbd5e1;font-size:18px;'; host.appendChild(inp); const check=document.createElement('button'); check.className='btn secondary'; check.textContent='Check'; check.onclick=()=&gt;{ const ok=inp.value.trim().toLowerCase()===q.en.toLowerCase(); if(ok){ score++; cheer(); speak(q.en,.85); } else { const tip=document.createElement('div'); tip.style.marginTop='8px'; tip.textContent='Correct: '+q.en; host.appendChild(tip); } if(n&gt;=8){ host.innerHTML += `&lt;div style='margin-top:8px;font-weight:900;color:#16a34a'&gt;Score: ${score} / ${n}&lt;/div&gt;`; } else { nextQ(); } }; host.appendChild(check); }
+  content.appendChild(p); content.appendChild(dict); }
+
+function renderReading(ls){ const p=document.createElement('div'); p.className='panel'; p.innerHTML='&lt;h2&gt;Reading — 6 Sentences&lt;/h2&gt;'; ls.reading.forEach((line,i)=&gt;{ const row=document.createElement('div'); row.className='readingLine'; row.innerHTML=`&lt;div&gt;&lt;b style='color:#2563eb'&gt;Sentence ${i+1}:&lt;/b&gt; ${line}&lt;/div&gt;`; const b=document.createElement('button'); b.className='btn primary'; b.textContent='🔈 British Slow'; b.onclick=()=&gt;speak(line,.82); row.appendChild(b); p.appendChild(row); }); content.appendChild(p); }
+
+function renderGames(ls){ const p=document.createElement('div'); p.className='panel'; p.innerHTML='&lt;h2&gt;Games&lt;/h2&gt;'; const box=document.createElement('div'); box.className='box'; box.innerHTML='&lt;h3&gt;Drag & Drop — Match (AR → EN)&lt;/h3&gt;'; const grid=document.createElement('div'); grid.className='grid2'; box.appendChild(grid); const left=document.createElement('div'); const right=document.createElement('div'); grid.appendChild(left); grid.appendChild(right);
+  const leftItems=shuffle([...ls.vocab]); const rightItems=shuffle([...ls.vocab]);
+  leftItems.forEach(v=&gt;{ const d=document.createElement('div'); d.className='draggable'; d.textContent=v.ar; d.draggable=true; d.dataset.word=v.en.toLowerCase(); d.ondragstart=e=&gt;e.dataTransfer.setData('text/plain',d.dataset.word); left.appendChild(d); });
+  rightItems.forEach(v=&gt;{ const dz=document.createElement('div'); dz.className='dropzone'; dz.textContent=v.en; dz.dataset.target=v.en.toLowerCase(); dz.ondragover=e=&gt;e.preventDefault(); dz.ondrop=e=&gt;{ e.preventDefault(); const w=e.dataTransfer.getData('text/plain'); if(w===dz.dataset.target){ dz.classList.add('correct'); dz.textContent+=' ✅'; cheer(); } else { dz.style.borderColor='#ef4444'; setTimeout(()=&gt;dz.style.borderColor='#94a3b8',600); } }; right.appendChild(dz); });
+  p.appendChild(box);
+  const k=document.createElement('div'); k.className='box'; k.innerHTML='&lt;h3&gt;Quick MCQ (Kahoot style)&lt;/h3&gt;&lt;div id="kq"&gt;&lt;/div&gt;&lt;div id="kScore" style="font-weight:900;color:#16a34a"&gt;Score: 0&lt;/div&gt;'; p.appendChild(k); startKahoot(); function startKahoot(){ let s=0; next(); function next(){ const host=k.querySelector('#kq'); host.innerHTML=''; const pool=[...ls.vocab]; const q=pool[Math.floor(Math.random()*pool.length)]; const wrongs=pool.filter(x=&gt;x.en!==q.en).sort(()=&gt;Math.random()-0.5).slice(0,3); let options=shuffle([q, ...wrongs]); const stem=document.createElement('div'); stem.textContent=`Choose the English word for: "${q.ar}"`; host.appendChild(stem); const opts=document.createElement('div'); opts.className='options'; host.appendChild(opts); options.forEach(o=&gt;{ const b=document.createElement('button'); b.className='opt'; b.textContent=o.en; b.onclick=()=&gt;{ [...opts.children].forEach(btn=&gt; btn.disabled=true); if(o.en===q.en){ b.classList.add('correct'); s++; k.querySelector('#kScore').textContent='Score: '+s; cheer(); setTimeout(next,800);} else { b.classList.add('wrong'); [...opts.children].forEach(btn=&gt;{ if(btn.textContent===q.en) btn.classList.add('correct'); }); } }; opts.appendChild(b); }); } }
+  content.appendChild(p); }
+
+function renderGrammar(ls){ const p=document.createElement('div'); p.className='panel'; p.innerHTML='&lt;h2&gt;Grammar — Articles (a/an/the & no article)&lt;/h2&gt;'; const expl=document.createElement('div'); expl.className='grammarBox'; expl.innerHTML = `
+  &lt;div class='gArt'&gt;&lt;b&gt;Indefinite articles (a/an):&lt;/b&gt; use &lt;b&gt;a&lt;/b&gt; before a consonant sound; &lt;b&gt;an&lt;/b&gt; before a vowel sound. &lt;i&gt;Examples:&lt;/i&gt; a doctor, an honest man.&lt;/div&gt;
+  &lt;div class='gUse'&gt;&lt;b&gt;Definite article (the):&lt;/b&gt; use for something specific or unique; and before musical instruments & superlatives. &lt;i&gt;Examples:&lt;/i&gt; the Nile River, play the guitar, the highest mountain.&lt;/div&gt;
+  &lt;div class='gTips'&gt;&lt;b&gt;No article:&lt;/b&gt; plural/uncountable in general, and some fixed expressions. &lt;i&gt;Examples:&lt;/i&gt; I like tea, Mount Everest is the highest mountain.&lt;/div&gt;`; p.appendChild(expl);
+  const q=document.createElement('div'); q.className='box'; p.appendChild(q);
+  grammarItems().forEach(item=&gt;{ const it=document.createElement('div'); it.style.margin='10px 0'; it.innerHTML=`&lt;div&gt;${item.stem}&lt;/div&gt;`; const opts=document.createElement('div'); opts.className='options'; it.appendChild(opts); shuffle(item.opts).forEach(o=&gt;{ const b=document.createElement('button'); b.className='opt'; b.textContent=o; b.onclick=()=&gt;{ [...opts.children].forEach(btn=&gt; btn.disabled=true); if(o===item.ans){ b.classList.add('correct'); cheer(); } else { b.classList.add('wrong'); [...opts.children].forEach(btn=&gt;{ if(btn.textContent===item.ans) btn.classList.add('correct'); }); } }; opts.appendChild(b); }); q.appendChild(it); });
+  content.appendChild(p); }
+
+function grammarItems(){ return [
+  {stem:'(1) He wrote ______ impressive resume.', opts:['a','an','the','no article'], ans:'an'},
+  {stem:'(2) She plays ______ guitar professionally.', opts:['a','an','the','no article'], ans:'the'},
+  {stem:'(3) Mount Everest is ______ highest mountain in the world.', opts:['a','an','the','no article'], ans:'the'},
+  {stem:'(4) I need ______ pen to sign the document.', opts:['a','an','the','no article'], ans:'a'},
+  {stem:'(5) He is ______ honest man.', opts:['a','an','the','no article'], ans:'an'},
+  {stem:'(6) She works in ______ hospital downtown.', opts:['a','an','the','no article'], ans:'the'},
+  {stem:'(7) The Nile River is ______ longest river in Africa.', opts:['a','an','the','no article'], ans:'the'},
+  {stem:"(8) I don't like ______ tea.", opts:['a','an','the','no article'], ans:'no article'},
+  {stem:"(9) He's ______ doctor I told you about.", opts:['a','an','the','no article'], ans:'the'},
+  {stem:'(10) She speaks ______ French and Spanish.', opts:['a','an','the','no article'], ans:'no article'},
+]; }
+
+function renderPractice(ls){ const p=document.createElement('div'); p.className='panel'; p.innerHTML='&lt;h2&gt;Practice — Fill the Blanks with a/an/the or no article&lt;/h2&gt;'; const items=[
+  {stem:'He is a honest man.', fix:'He is an honest man.'},
+  {stem:'I want to buy an new car.', fix:'I want to buy a new car.'},
+  {stem:'A birds sing in the morning.', fix:'Birds sing in the morning.'},
+  {stem:"He's doctor.", fix:'He is a doctor.'},
+  {stem:'A moon is beautiful tonight.', fix:'The moon is beautiful tonight.'},
+  {stem:'She gave me an advice.', fix:'She gave me some advice.'},
+  {stem:'I need the pen to write.', fix:'I need a pen to write.'},
+  {stem:'Sun rises in the east.', fix:'The sun rises in the east.'},
+  {stem:'They live in the London.', fix:'They live in London.'},
+  {stem:'We met on the Monday.', fix:'We met on Monday.'},
+]; items.forEach((it,i)=&gt;{ const row=document.createElement('div'); row.className='box'; row.style.margin='8px 0'; row.innerHTML=`&lt;div&gt;&lt;b&gt;${i+1}.&lt;/b&gt; ${it.stem}&lt;/div&gt;`; const show=document.createElement('button'); show.className='btn secondary'; show.textContent='Show Answer'; show.onclick=()=&gt;{ const tip=document.createElement('div'); tip.style.marginTop='6px'; tip.innerHTML='&lt;b&gt;✔ '+it.fix+'&lt;/b&gt;'; row.appendChild(tip); cheer(); show.disabled=true; }; row.appendChild(show); p.appendChild(row); }); content.appendChild(p); }
+
+// ----- UNIT EXAM from provided page -----
+const examVocab = [
+  {stem:'1. A well-written ______ can help you get an interview.', opts:['resume','attitude','skills','generic'], ans:'resume'},
+  {stem:'2. Employers prefer a ______ resume that looks professional.', opts:['polished','generic','footprint','approach'], ans:'polished'},
+  {stem:'3. Your digital ______ can affect your job chances.', opts:['footprint','resume','attitude','association'], ans:'footprint'},
+  {stem:'4. Joining an ______ can help you build connections.', opts:['association','candidate','approach','skills'], ans:'association'},
+  {stem:'5. Avoid sending the same ______ resume to all employers.', opts:['generic','polished','resume','attitude'], ans:'generic'},
+  {stem:'6. A positive ______ is important during job hunting.', opts:['attitude','resume','skills','footprint'], ans:'attitude'},
+  {stem:'7. The ______ should prepare well for the interview.', opts:['candidate','resume','approach','association'], ans:'candidate'},
+  {stem:'8. Prepare for the job ______ by practicing questions.', opts:['interview','resume','skills','footprint'], ans:'interview'},
+  {stem:'9. Communication ______ are essential for success.', opts:['skills','resume','generic','attitude'], ans:'skills'},
+  {stem:'10. Choose the right ______ to answer behavioral questions.', opts:['approach','resume','polished','candidate'], ans:'approach'},
+];
+const examGrammar = grammarItems();
+
+function renderUnitExam(){ const p=document.createElement('div'); p.className='panel'; p.innerHTML='&lt;h2&gt;Unit Exam — 20 MCQs (from the page)&lt;/h2&gt;'; const tb=document.createElement('div'); tb.className='toolbar'; p.appendChild(tb); const start=document.createElement('button'); start.className='btn primary'; start.textContent='Start Exam'; tb.appendChild(start); const restart=document.createElement('button'); restart.className='btn secondary'; restart.textContent='Restart Exam'; tb.appendChild(restart); const host=document.createElement('div'); host.className='box'; p.appendChild(host); content.appendChild(p);
+  let score=0, qn=0, seq=[]; function init(){ score=0; qn=0; seq=[...examVocab, ...examGrammar]; next(); }
+  function next(){ host.innerHTML=''; if(qn&gt;=seq.length){ finish(); return; } const q=seq[qn]; qn++; const stem=document.createElement('div'); stem.innerHTML=`&lt;h4&gt;Question ${qn} of ${seq.length}&lt;/h4&gt;&lt;div&gt;${q.stem}&lt;/div&gt;`; host.appendChild(stem); const opts=document.createElement('div'); opts.className='options'; host.appendChild(opts); shuffle(q.opts).forEach(o=&gt;{ const b=document.createElement('button'); b.className='opt'; b.textContent=o; b.onclick=()=&gt;{ [...opts.children].forEach(btn=&gt; btn.disabled=true); if(o===q.ans){ score++; b.classList.add('correct'); cheer(); setTimeout(next,800);} else { b.classList.add('wrong'); [...opts.children].forEach(btn=&gt;{ if(btn.textContent===q.ans) btn.classList.add('correct'); }); const tip=document.createElement('div'); tip.style.marginTop='8px'; tip.textContent='Correct answer: '+q.ans; host.appendChild(tip); setTimeout(next,1100);} sc.textContent='Score: '+score+' / '+seq.length; }; opts.appendChild(b); }); const sc=document.createElement('div'); sc.style.fontWeight='900'; sc.style.color='var(--good)'; sc.textContent='Score: '+score+' / '+seq.length; host.appendChild(sc); }
+  function finish(){ host.innerHTML += `&lt;div&gt;&lt;h3&gt;Exam Finished ✅&lt;/h3&gt;&lt;div style='font-weight:900;color:#16a34a'&gt;Your score: ${score} / ${seq.length}&lt;/div&gt;&lt;/div&gt;`; }
+  start.onclick=init; restart.onclick=init; }
+
+// Init
+renderLessonCards(); renderTabs(); renderTabContent();
+&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre><div class="words">
+  <button data-word="example">example</button>
+  <button data-word="practice">practice</button>
+</div></section><section id="games" class="card"><h2>Games</h2>  <div id="match-game" class="card">    <script type="application/json">[{"word":"example","meaning":"a thing characteristic of its kind"},{"word":"practice","meaning":"do repeatedly to acquire skill"},{"word":"lesson","meaning":"a period of learning"}]</script>  </div></section><section id="reading" class="card"><h2>Reading</h2><pre class="card">&lt;!DOCTYPE html&gt;
+&lt;html lang="en" dir="ltr"&gt;
+&lt;head&gt;
+&lt;meta charset="UTF-8" /&gt;
+&lt;meta name="viewport" content="width=device-width, initial-scale=1" /&gt;
+&lt;title&gt;Unit 6 — Job Hunting | Interactive Lessons Hub (v1)&lt;/title&gt;
+&lt;style&gt;
+  :root{ --bg:#f6f7fb; --text:#0b1220; --pill:#e2e8f0; --pillActive:#fde68a; --cardShadow:0 8px 20px rgba(0,0,0,.08); --good:#22c55e; --bad:#ef4444; --brand1:#34d399; --brand2:#60a5fa; }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--text);font-family:"Tahoma",system-ui,Segoe UI,Arial}
+  header{background:linear-gradient(90deg,var(--brand1),var(--brand2)); color:#0b1220; padding:16px 14px; position:sticky; top:0; z-index:30}
+  .headWrap{max-width:1100px;margin:0 auto;display:flex;gap:12px;align-items:center}
+  .brand{width:44px;height:44px;border-radius:14px;background:conic-gradient(from 200deg,var(--brand1),var(--brand2),#f59e0b,#a78bfa,var(--brand1))}
+  h1{margin:0;font-size:20px}
+  small{opacity:.8}
+
+  .container{max-width:1100px;margin:14px auto;padding:0 12px}
+  .lessonGrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:10px}
+  .lessonCard{background:#fff;border-radius:16px;padding:14px;text-align:center;font-weight:900;box-shadow:var(--cardShadow);cursor:pointer;border:1px solid #eef2ff}
+  .lessonCard.active{background:#fde68a}
+  .lessonCard.unit{background:#e0f2fe}
+
+  .tabs{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}
+  .tabBtn{background:var(--pill); border:none; border-radius:999px; padding:10px 14px; font-weight:900; cursor:pointer; color:#111827}
+  .tabBtn.active{background:var(--pillActive)}
+
+  .panel{background:#fff;border:1px solid #e5e7eb;border-radius:16px;box-shadow:var(--cardShadow);padding:12px;margin-top:12px}
+
+  .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px}
+  .card{border-radius:18px;padding:14px;box-shadow:var(--cardShadow);border:1px solid #eef2ff}
+  .card:nth-child(6n+1){background:#ffd1d1}
+  .card:nth-child(6n+2){background:#ffe1af}
+  .card:nth-child(6n+3){background:#fff4b3}
+  .card:nth-child(6n+4){background:#c9f7dc}
+  .card:nth-child(6n+5){background:#d7ecff}
+  .card:nth-child(6n+6){background:#f3d9ff}
+  .en{font-size:22px;font-weight:900}
+  .ar{margin-top:4px;color:#1f2937}
+  .ex{margin-top:8px;color:#0f172a;opacity:.9}
+  .actions{display:flex;gap:8px;margin-top:10px}
+  .btn{border:none;border-radius:12px;padding:10px 12px;font-weight:900;cursor:pointer}
+  .primary{background:#22c55e;color:#063019}
+  .secondary{background:#dbeafe;color:#0b1220}
+
+  .box{background:#f8fafc;border:1px dashed #cbd5e1;border-radius:14px;padding:12px}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+  .draggable{background:#fde68a;padding:12px;border-radius:12px;text-align:center;font-weight:900;cursor:grab}
+  .dropzone{background:#e2e8f0;padding:12px;border-radius:12px;min-height:52px;border:2px dashed #94a3b8;text-align:center}
+  .dropzone.correct{background:#86efac;border-color:#16a34a}
+
+  .options{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:10px}
+  .opt{border:none;border-radius:12px;padding:14px;font-weight:900;cursor:pointer;color:#0b1220}
+  .opt.correct{outline:4px solid var(--good)}
+  .opt.wrong{outline:4px solid var(--bad); opacity:.75}
+
+  .readingLine{display:flex;justify-content:space-between;align-items:center;background:#f8fafc;border:1px solid #e5e7eb;border-radius:12px;padding:12px;margin-top:8px}
+
+  .confetti{position:fixed;inset:0;pointer-events:none;z-index:100}
+  .piece{position:absolute;width:10px;height:14px;animation:fall 1800ms linear forwards}
+  @keyframes fall{to{transform:translateY(100vh) rotate(720deg);opacity:.25}}
+
+  .toolbar{display:flex;gap:8px;margin:8px 0}
+
+  .grammarBox{display:grid;gap:10px}
+  .gArt{background:#eff6ff;color:#1e40af;border-radius:10px;padding:10px}
+  .gUse{background:#f5f3ff;color:#6d28d9;border-radius:10px;padding:10px}
+  .gTips{background:#ecfdf5;color:#065f46;border-radius:10px;padding:10px}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;header&gt;
+  &lt;div class="headWrap"&gt;
+    &lt;div class="brand"&gt;&lt;/div&gt;
+    &lt;div&gt;
+      &lt;h1&gt;Unit 6 — Job Hunting | All‑in‑One Lessons Hub&lt;/h1&gt;
+      &lt;small&gt;Prepared by: Ms Asmaa Mahmoud El‑Hagrasy&lt;/small&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/header&gt;
+
+&lt;div class="container"&gt;
+  &lt;div id="lessonGrid" class="lessonGrid"&gt;&lt;/div&gt;
+  &lt;div id="tabs" class="tabs"&gt;&lt;/div&gt;
+  &lt;div id="tabContent"&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="confetti" id="confetti"&gt;&lt;/div&gt;
+
+&lt;script&gt;
+function shuffle(arr){ const a=[...arr]; for(let i=a.length-1;i&gt;0;i--){ const j=Math.floor(Math.random()*(i+1)); [a[i],a[j]]=[a[j],a[i]]; } return a; }
+let voices=[]; function loadVoices(){ voices=speechSynthesis.getVoices(); } window.speechSynthesis.onvoiceschanged=loadVoices; loadVoices();
+function pickBritish(){ const c=(voices||[]).filter(v=&gt;/en-GB|UK|Brit/i.test(v.lang+v.name)); const f=c.find(v=&gt;/Female|Sonia|Hazel|Libby|Serena|Zira|Amy|Emma/i.test(v.name)); return f||c[0]||null; }
+function speak(text, rate=.82){ const u=new SpeechSynthesisUtterance(text); u.rate=rate; u.pitch=1.05; u.lang='en-GB'; const v=pickBritish(); if(v) u.voice=v; speechSynthesis.cancel(); speechSynthesis.speak(u); }
+function cheer(){ const ctx=new (window.AudioContext||window.webkitAudioContext)(); const o=ctx.createOscillator(); const g=ctx.createGain(); o.type='triangle'; o.frequency.value=640; g.gain.value=.06; o.connect(g).connect(ctx.destination); o.start(); setTimeout(()=&gt;o.frequency.value=840,160); setTimeout(()=&gt;o.stop(),360); confetti(); }
+function confetti(){ const c=document.getElementById('confetti'); c.innerHTML=''; for(let i=0;i&lt;40;i++){ const p=document.createElement('div'); p.className='piece'; p.style.left=Math.random()*100+'vw'; p.style.top='-10px'; p.style.background=`hsl(${Math.random()*360},90%,60%)`; p.style.animationDuration=(1200+Math.random()*1200)+'ms'; c.appendChild(p);} setTimeout(()=&gt;c.innerHTML='',2000) }
+
+const lessons = [
+  { id:1, title:'Lesson 1 — The Modern Job Hunt',
+    vocab:[
+      {en:'resume', ar:'سيرة ذاتية', ex:'A strong resume can help you get interviews.'},
+      {en:'polished', ar:'مصقول/احترافي', ex:'Employers prefer a polished resume.'},
+      {en:'footprint', ar:'بصمة رقمية', ex:'Your digital footprint affects job chances.'},
+      {en:'association', ar:'جمعية/رابطة', ex:'Joining an association helps networking.'},
+      {en:'generic', ar:'عام/غير محدد', ex:'Avoid sending a generic resume.'},
+      {en:'approach', ar:'منهج/طريقة', ex:'Choose the right approach for interviews.'},
+      {en:'attitude', ar:'اتّجاه/سلوك', ex:'A positive attitude is important.'},
+    ],
+    reading:[
+      'Today job seekers build a professional online presence.',
+      'Networking and personalized applications increase success.',
+      'Modern interviews can be phone, video, or skills-based.',
+      'Keeping a positive attitude helps in the long run.'
+    ]
+  },
+  { id:2, title:'Lesson 2 — Job Interview (Listening)',
+    vocab:[
+      {en:'department', ar:'قسم', ex:'She works in the sales department.'},
+      {en:'ground', ar:'أساس/أرضية مشتركة', ex:'Find common ground with the team.'},
+      {en:'silos', ar:'عزلة الفرق', ex:'Break down silos to share information.'},
+      {en:'impressive', ar:'مُلفِت/مثير للإعجاب', ex:'He gave an impressive presentation.'},
+      {en:'independently', ar:'بشكل مستقل', ex:'She completes tasks independently.'},
+      {en:'stakeholders', ar:'أصحاب المصلحة', ex:'Stakeholders care about project outcomes.'},
+      {en:'check-ins', ar:'اجتماعات متابعة', ex:'Weekly check-ins track progress.'},
+      {en:'innovative', ar:'مبتكر', ex:'They proposed an innovative idea.'},
+      {en:'implementing', ar:'تنفيذ', ex:'We are implementing the plan.'},
+      {en:'mentor', ar:'مُرشِد', ex:'A mentor supports junior staff.'},
+    ],
+    reading:[
+      'The candidate discusses strengths and future goals.',
+      'Projects require collaboration across departments.',
+      'Use STAR method to answer behavioural questions.'
+    ]
+  },
+  { id:3, title:'Lesson 3 — Career Decisions (Grammar: Articles)', grammar:true,
+    vocab:[
+      {en:'article (a/an/the)', ar:'أداة التعريف/النكرة', ex:'Use a/an/the correctly with nouns.'},
+      {en:'research', ar:'بحث', ex:'Research helps students choose a career.'},
+      {en:'internship', ar:'تدريب', ex:'Internships shape career goals.'},
+      {en:'volunteering', ar:'تطوّع', ex:'Volunteering gives real experience.'},
+    ],
+    reading:[
+      'Self-reflection identifies strengths.',
+      'Research and internships guide better decisions.',
+      'Use a/an/the, or no article, based on context.'
+    ]
+  },
+  { id:4, title:'Lesson 4 — My Resume (Reading)',
+    vocab:[
+      {en:'analysis', ar:'تحليل', ex:'Data analysis improves campaigns.'},
+      {en:'coordinator', ar:'منسّق', ex:'The coordinator keeps teams aligned.'},
+      {en:'promotional', ar:'ترويجي', ex:'They ran promotional activities.'},
+      {en:'collaborated', ar:'تعاون', ex:'She collaborated with the design team.'},
+      {en:'managed', ar:'أدار', ex:'He managed social media accounts.'},
+      {en:'organized', ar:'نظّم', ex:'They organized monthly meetings.'},
+      {en:'assisted', ar:'ساعد', ex:'He assisted customers at the desk.'},
+      {en:'analyzed', ar:'حلّل', ex:'They analyzed the budget.'},
+    ],
+    reading:[
+      'Professional summary highlights skills and achievements.',
+      'Work experience lists responsibilities and results.',
+      'Skills include content creation and data analysis.'
+    ]
+  },
+  { id:5, title:'Lesson 5 — Curriculum Vitae (CV)',
+    vocab:[
+      {en:'personal statement', ar:'بيان شخصي', ex:'Write a short personal statement.'},
+      {en:'education', ar:'تعليم', ex:'List education in reverse chronological order.'},
+      {en:'work experience', ar:'خبرة عملية', ex:'Include relevant jobs and internships.'},
+      {en:'skills', ar:'مهارات', ex:'Add technical and soft skills.'},
+      {en:'references', ar:'مرجعيات', ex:'Provide references if requested.'},
+    ],
+    reading:[
+      'A good CV is clear, short, and relevant.',
+      'Use action verbs to describe achievements.',
+      'Update the CV regularly.'
+    ]
+  }
+];
+
+const BASE_TABS = ['Exam','Games','Reading','Vocabulary'];
+let current = { type:'lesson', id:1, tab:'Vocabulary' };
+
+const lessonGrid = document.getElementById('lessonGrid');
+function renderLessonCards(){ lessonGrid.innerHTML=''; lessons.forEach(ls=&gt;{ const card=document.createElement('div'); card.className='lessonCard'; card.textContent=ls.title; card.onclick=()=&gt;{ current={type:'lesson', id:ls.id, tab: ls.grammar? 'Grammar':'Vocabulary'}; renderTabs(); renderTabContent(); highlightCards(); }; if(current.type==='lesson' && current.id===ls.id) card.classList.add('active'); lessonGrid.appendChild(card); }); const unit=document.createElement('div'); unit.className='lessonCard unit'; unit.textContent='Unit Exam (from page)'; unit.onclick=()=&gt;{ current={type:'unitExam', id:'unit', tab:null}; renderTabs(); renderTabContent(); highlightCards(); }; lessonGrid.appendChild(unit); }
+function highlightCards(){ document.querySelectorAll('.lessonCard').forEach((c,i)=&gt;{ const isUnit=c.classList.contains('unit'); if(!isUnit){ const id=lessons[i].id; c.classList.toggle('active', current.type==='lesson' && current.id===id) } else { c.classList.toggle('active', current.type==='unitExam'); } }); }
+
+const tabsWrap = document.getElementById('tabs');
+function renderTabs(){ tabsWrap.innerHTML=''; if(current.type==='unitExam'){ const b=document.createElement('button'); b.className='tabBtn active'; b.textContent='Unit Exam'; tabsWrap.appendChild(b); return; } const ls=lessons.find(x=&gt;x.id===current.id); const tabs=[...BASE_TABS]; if(ls.grammar){ tabs.push('Grammar','Practice'); } tabs.forEach(name=&gt;{ const b=document.createElement('button'); b.className='tabBtn'; b.textContent=name; b.onclick=()=&gt;{ if(name==='Exam'){ current={type:'unitExam', id:'unit', tab:null}; renderTabs(); renderTabContent(); highlightCards(); } else { current.tab=name; renderTabContent(); setActiveTab(); } }; tabsWrap.appendChild(b); }); current.tab = current.tab || (ls.grammar?'Grammar':'Vocabulary'); setActiveTab(); }
+function setActiveTab(){ document.querySelectorAll('.tabBtn').forEach(b=&gt; b.classList.toggle('active', b.textContent===current.tab)); }
+
+const content = document.getElementById('tabContent');
+function renderTabContent(){ content.innerHTML=''; if(current.type==='unitExam') return renderUnitExam(); const ls=lessons.find(x=&gt;x.id===current.id); if(current.tab==='Vocabulary') return renderVocabulary(ls); if(current.tab==='Reading') return renderReading(ls); if(current.tab==='Games') return renderGames(ls); if(current.tab==='Grammar') return renderGrammar(ls); if(current.tab==='Practice') return renderPractice(ls); }
+
+function renderVocabulary(ls){ const p=document.createElement('div'); p.className='panel'; p.innerHTML='&lt;h2&gt;Vocabulary (EN word + AR meaning) + Dictation&lt;/h2&gt;'; const grid=document.createElement('div'); grid.className='cards'; p.appendChild(grid); ls.vocab.forEach(item=&gt;{ const card=document.createElement('div'); card.className='card'; card.innerHTML=`&lt;div class='en'&gt;${item.en}&lt;/div&gt;&lt;div class='ar'&gt;${item.ar}&lt;/div&gt;&lt;div class='ex'&gt;&lt;i&gt;${item.ex}&lt;/i&gt;&lt;/div&gt;`; const actions=document.createElement('div'); actions.className='actions'; const speakWord=document.createElement('button'); speakWord.className='btn primary'; speakWord.textContent='Pronounce ▶'; speakWord.onclick=()=&gt;speak(item.en,.85); const speakEx=document.createElement('button'); speakEx.className='btn secondary'; speakEx.textContent='Speak Example 🎧'; speakEx.onclick=()=&gt;speak(item.ex,.88); actions.appendChild(speakEx); actions.appendChild(speakWord); card.appendChild(actions); grid.appendChild(card); });
+  const dict=document.createElement('div'); dict.className='panel'; dict.innerHTML = `&lt;h3&gt;✍️ Dictation (AR → EN)&lt;/h3&gt;&lt;div class='box'&gt;Type the &lt;b&gt;English word&lt;/b&gt; when I show the &lt;b&gt;Arabic word&lt;/b&gt;. The word will be pronounced &lt;b&gt;after&lt;/b&gt; a correct answer.&lt;/div&gt;`; const start=document.createElement('button'); start.className='btn primary'; start.textContent='Start Dictation'; dict.appendChild(start); const host=document.createElement('div'); host.className='box'; dict.appendChild(host); let score=0,n=0; start.onclick=()=&gt;{ score=0;n=0; nextQ(); }; function nextQ(){ host.innerHTML=''; const pool=[...ls.vocab]; const q=pool[Math.floor(Math.random()*pool.length)]; n++; const info=document.createElement('div'); info.innerHTML=`&lt;b&gt;الكلمة بالعربي:&lt;/b&gt; ${q.ar}`; host.appendChild(info); const inp=document.createElement('input'); inp.type='text'; inp.placeholder='Type the English word here'; inp.style.cssText='width:100%;padding:10px;margin-top:8px;border-radius:10px;border:1px solid #cbd5e1;font-size:18px;'; host.appendChild(inp); const check=document.createElement('button'); check.className='btn secondary'; check.textContent='Check'; check.onclick=()=&gt;{ const ok=inp.value.trim().toLowerCase()===q.en.toLowerCase(); if(ok){ score++; cheer(); speak(q.en,.85); } else { const tip=document.createElement('div'); tip.style.marginTop='8px'; tip.textContent='Correct: '+q.en; host.appendChild(tip); } if(n&gt;=8){ host.innerHTML += `&lt;div style='margin-top:8px;font-weight:900;color:#16a34a'&gt;Score: ${score} / ${n}&lt;/div&gt;`; } else { nextQ(); } }; host.appendChild(check); }
+  content.appendChild(p); content.appendChild(dict); }
+
+function renderReading(ls){ const p=document.createElement('div'); p.className='panel'; p.innerHTML='&lt;h2&gt;Reading — 6 Sentences&lt;/h2&gt;'; ls.reading.forEach((line,i)=&gt;{ const row=document.createElement('div'); row.className='readingLine'; row.innerHTML=`&lt;div&gt;&lt;b style='color:#2563eb'&gt;Sentence ${i+1}:&lt;/b&gt; ${line}&lt;/div&gt;`; const b=document.createElement('button'); b.className='btn primary'; b.textContent='🔈 British Slow'; b.onclick=()=&gt;speak(line,.82); row.appendChild(b); p.appendChild(row); }); content.appendChild(p); }
+
+function renderGames(ls){ const p=document.createElement('div'); p.className='panel'; p.innerHTML='&lt;h2&gt;Games&lt;/h2&gt;'; const box=document.createElement('div'); box.className='box'; box.innerHTML='&lt;h3&gt;Drag & Drop — Match (AR → EN)&lt;/h3&gt;'; const grid=document.createElement('div'); grid.className='grid2'; box.appendChild(grid); const left=document.createElement('div'); const right=document.createElement('div'); grid.appendChild(left); grid.appendChild(right);
+  const leftItems=shuffle([...ls.vocab]); const rightItems=shuffle([...ls.vocab]);
+  leftItems.forEach(v=&gt;{ const d=document.createElement('div'); d.className='draggable'; d.textContent=v.ar; d.draggable=true; d.dataset.word=v.en.toLowerCase(); d.ondragstart=e=&gt;e.dataTransfer.setData('text/plain',d.dataset.word); left.appendChild(d); });
+  rightItems.forEach(v=&gt;{ const dz=document.createElement('div'); dz.className='dropzone'; dz.textContent=v.en; dz.dataset.target=v.en.toLowerCase(); dz.ondragover=e=&gt;e.preventDefault(); dz.ondrop=e=&gt;{ e.preventDefault(); const w=e.dataTransfer.getData('text/plain'); if(w===dz.dataset.target){ dz.classList.add('correct'); dz.textContent+=' ✅'; cheer(); } else { dz.style.borderColor='#ef4444'; setTimeout(()=&gt;dz.style.borderColor='#94a3b8',600); } }; right.appendChild(dz); });
+  p.appendChild(box);
+  const k=document.createElement('div'); k.className='box'; k.innerHTML='&lt;h3&gt;Quick MCQ (Kahoot style)&lt;/h3&gt;&lt;div id="kq"&gt;&lt;/div&gt;&lt;div id="kScore" style="font-weight:900;color:#16a34a"&gt;Score: 0&lt;/div&gt;'; p.appendChild(k); startKahoot(); function startKahoot(){ let s=0; next(); function next(){ const host=k.querySelector('#kq'); host.innerHTML=''; const pool=[...ls.vocab]; const q=pool[Math.floor(Math.random()*pool.length)]; const wrongs=pool.filter(x=&gt;x.en!==q.en).sort(()=&gt;Math.random()-0.5).slice(0,3); let options=shuffle([q, ...wrongs]); const stem=document.createElement('div'); stem.textContent=`Choose the English word for: "${q.ar}"`; host.appendChild(stem); const opts=document.createElement('div'); opts.className='options'; host.appendChild(opts); options.forEach(o=&gt;{ const b=document.createElement('button'); b.className='opt'; b.textContent=o.en; b.onclick=()=&gt;{ [...opts.children].forEach(btn=&gt; btn.disabled=true); if(o.en===q.en){ b.classList.add('correct'); s++; k.querySelector('#kScore').textContent='Score: '+s; cheer(); setTimeout(next,800);} else { b.classList.add('wrong'); [...opts.children].forEach(btn=&gt;{ if(btn.textContent===q.en) btn.classList.add('correct'); }); } }; opts.appendChild(b); }); } }
+  content.appendChild(p); }
+
+function renderGrammar(ls){ const p=document.createElement('div'); p.className='panel'; p.innerHTML='&lt;h2&gt;Grammar — Articles (a/an/the & no article)&lt;/h2&gt;'; const expl=document.createElement('div'); expl.className='grammarBox'; expl.innerHTML = `
+  &lt;div class='gArt'&gt;&lt;b&gt;Indefinite articles (a/an):&lt;/b&gt; use &lt;b&gt;a&lt;/b&gt; before a consonant sound; &lt;b&gt;an&lt;/b&gt; before a vowel sound. &lt;i&gt;Examples:&lt;/i&gt; a doctor, an honest man.&lt;/div&gt;
+  &lt;div class='gUse'&gt;&lt;b&gt;Definite article (the):&lt;/b&gt; use for something specific or unique; and before musical instruments & superlatives. &lt;i&gt;Examples:&lt;/i&gt; the Nile River, play the guitar, the highest mountain.&lt;/div&gt;
+  &lt;div class='gTips'&gt;&lt;b&gt;No article:&lt;/b&gt; plural/uncountable in general, and some fixed expressions. &lt;i&gt;Examples:&lt;/i&gt; I like tea, Mount Everest is the highest mountain.&lt;/div&gt;`; p.appendChild(expl);
+  const q=document.createElement('div'); q.className='box'; p.appendChild(q);
+  grammarItems().forEach(item=&gt;{ const it=document.createElement('div'); it.style.margin='10px 0'; it.innerHTML=`&lt;div&gt;${item.stem}&lt;/div&gt;`; const opts=document.createElement('div'); opts.className='options'; it.appendChild(opts); shuffle(item.opts).forEach(o=&gt;{ const b=document.createElement('button'); b.className='opt'; b.textContent=o; b.onclick=()=&gt;{ [...opts.children].forEach(btn=&gt; btn.disabled=true); if(o===item.ans){ b.classList.add('correct'); cheer(); } else { b.classList.add('wrong'); [...opts.children].forEach(btn=&gt;{ if(btn.textContent===item.ans) btn.classList.add('correct'); }); } }; opts.appendChild(b); }); q.appendChild(it); });
+  content.appendChild(p); }
+
+function grammarItems(){ return [
+  {stem:'(1) He wrote ______ impressive resume.', opts:['a','an','the','no article'], ans:'an'},
+  {stem:'(2) She plays ______ guitar professionally.', opts:['a','an','the','no article'], ans:'the'},
+  {stem:'(3) Mount Everest is ______ highest mountain in the world.', opts:['a','an','the','no article'], ans:'the'},
+  {stem:'(4) I need ______ pen to sign the document.', opts:['a','an','the','no article'], ans:'a'},
+  {stem:'(5) He is ______ honest man.', opts:['a','an','the','no article'], ans:'an'},
+  {stem:'(6) She works in ______ hospital downtown.', opts:['a','an','the','no article'], ans:'the'},
+  {stem:'(7) The Nile River is ______ longest river in Africa.', opts:['a','an','the','no article'], ans:'the'},
+  {stem:"(8) I don't like ______ tea.", opts:['a','an','the','no article'], ans:'no article'},
+  {stem:"(9) He's ______ doctor I told you about.", opts:['a','an','the','no article'], ans:'the'},
+  {stem:'(10) She speaks ______ French and Spanish.', opts:['a','an','the','no article'], ans:'no article'},
+]; }
+
+function renderPractice(ls){ const p=document.createElement('div'); p.className='panel'; p.innerHTML='&lt;h2&gt;Practice — Fill the Blanks with a/an/the or no article&lt;/h2&gt;'; const items=[
+  {stem:'He is a honest man.', fix:'He is an honest man.'},
+  {stem:'I want to buy an new car.', fix:'I want to buy a new car.'},
+  {stem:'A birds sing in the morning.', fix:'Birds sing in the morning.'},
+  {stem:"He's doctor.", fix:'He is a doctor.'},
+  {stem:'A moon is beautiful tonight.', fix:'The moon is beautiful tonight.'},
+  {stem:'She gave me an advice.', fix:'She gave me some advice.'},
+  {stem:'I need the pen to write.', fix:'I need a pen to write.'},
+  {stem:'Sun rises in the east.', fix:'The sun rises in the east.'},
+  {stem:'They live in the London.', fix:'They live in London.'},
+  {stem:'We met on the Monday.', fix:'We met on Monday.'},
+]; items.forEach((it,i)=&gt;{ const row=document.createElement('div'); row.className='box'; row.style.margin='8px 0'; row.innerHTML=`&lt;div&gt;&lt;b&gt;${i+1}.&lt;/b&gt; ${it.stem}&lt;/div&gt;`; const show=document.createElement('button'); show.className='btn secondary'; show.textContent='Show Answer'; show.onclick=()=&gt;{ const tip=document.createElement('div'); tip.style.marginTop='6px'; tip.innerHTML='&lt;b&gt;✔ '+it.fix+'&lt;/b&gt;'; row.appendChild(tip); cheer(); show.disabled=true; }; row.appendChild(show); p.appendChild(row); }); content.appendChild(p); }
+
+// ----- UNIT EXAM from provided page -----
+const examVocab = [
+  {stem:'1. A well-written ______ can help you get an interview.', opts:['resume','attitude','skills','generic'], ans:'resume'},
+  {stem:'2. Employers prefer a ______ resume that looks professional.', opts:['polished','generic','footprint','approach'], ans:'polished'},
+  {stem:'3. Your digital ______ can affect your job chances.', opts:['footprint','resume','attitude','association'], ans:'footprint'},
+  {stem:'4. Joining an ______ can help you build connections.', opts:['association','candidate','approach','skills'], ans:'association'},
+  {stem:'5. Avoid sending the same ______ resume to all employers.', opts:['generic','polished','resume','attitude'], ans:'generic'},
+  {stem:'6. A positive ______ is important during job hunting.', opts:['attitude','resume','skills','footprint'], ans:'attitude'},
+  {stem:'7. The ______ should prepare well for the interview.', opts:['candidate','resume','approach','association'], ans:'candidate'},
+  {stem:'8. Prepare for the job ______ by practicing questions.', opts:['interview','resume','skills','footprint'], ans:'interview'},
+  {stem:'9. Communication ______ are essential for success.', opts:['skills','resume','generic','attitude'], ans:'skills'},
+  {stem:'10. Choose the right ______ to answer behavioral questions.', opts:['approach','resume','polished','candidate'], ans:'approach'},
+];
+const examGrammar = grammarItems();
+
+function renderUnitExam(){ const p=document.createElement('div'); p.className='panel'; p.innerHTML='&lt;h2&gt;Unit Exam — 20 MCQs (from the page)&lt;/h2&gt;'; const tb=document.createElement('div'); tb.className='toolbar'; p.appendChild(tb); const start=document.createElement('button'); start.className='btn primary'; start.textContent='Start Exam'; tb.appendChild(start); const restart=document.createElement('button'); restart.className='btn secondary'; restart.textContent='Restart Exam'; tb.appendChild(restart); const host=document.createElement('div'); host.className='box'; p.appendChild(host); content.appendChild(p);
+  let score=0, qn=0, seq=[]; function init(){ score=0; qn=0; seq=[...examVocab, ...examGrammar]; next(); }
+  function next(){ host.innerHTML=''; if(qn&gt;=seq.length){ finish(); return; } const q=seq[qn]; qn++; const stem=document.createElement('div'); stem.innerHTML=`&lt;h4&gt;Question ${qn} of ${seq.length}&lt;/h4&gt;&lt;div&gt;${q.stem}&lt;/div&gt;`; host.appendChild(stem); const opts=document.createElement('div'); opts.className='options'; host.appendChild(opts); shuffle(q.opts).forEach(o=&gt;{ const b=document.createElement('button'); b.className='opt'; b.textContent=o; b.onclick=()=&gt;{ [...opts.children].forEach(btn=&gt; btn.disabled=true); if(o===q.ans){ score++; b.classList.add('correct'); cheer(); setTimeout(next,800);} else { b.classList.add('wrong'); [...opts.children].forEach(btn=&gt;{ if(btn.textContent===q.ans) btn.classList.add('correct'); }); const tip=document.createElement('div'); tip.style.marginTop='8px'; tip.textContent='Correct answer: '+q.ans; host.appendChild(tip); setTimeout(next,1100);} sc.textContent='Score: '+score+' / '+seq.length; }; opts.appendChild(b); }); const sc=document.createElement('div'); sc.style.fontWeight='900'; sc.style.color='var(--good)'; sc.textContent='Score: '+score+' / '+seq.length; host.appendChild(sc); }
+  function finish(){ host.innerHTML += `&lt;div&gt;&lt;h3&gt;Exam Finished ✅&lt;/h3&gt;&lt;div style='font-weight:900;color:#16a34a'&gt;Your score: ${score} / ${seq.length}&lt;/div&gt;&lt;/div&gt;`; }
+  start.onclick=init; restart.onclick=init; }
+
+// Init
+renderLessonCards(); renderTabs(); renderTabContent();
+&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre></section><section id="grammar" class="card"><h2>Grammar</h2><pre class="card">&lt;!DOCTYPE html&gt;
+&lt;html lang="en" dir="ltr"&gt;
+&lt;head&gt;
+&lt;meta charset="UTF-8" /&gt;
+&lt;meta name="viewport" content="width=device-width, initial-scale=1" /&gt;
+&lt;title&gt;Unit 6 — Job Hunting | Interactive Lessons Hub (v1)&lt;/title&gt;
+&lt;style&gt;
+  :root{ --bg:#f6f7fb; --text:#0b1220; --pill:#e2e8f0; --pillActive:#fde68a; --cardShadow:0 8px 20px rgba(0,0,0,.08); --good:#22c55e; --bad:#ef4444; --brand1:#34d399; --brand2:#60a5fa; }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--text);font-family:"Tahoma",system-ui,Segoe UI,Arial}
+  header{background:linear-gradient(90deg,var(--brand1),var(--brand2)); color:#0b1220; padding:16px 14px; position:sticky; top:0; z-index:30}
+  .headWrap{max-width:1100px;margin:0 auto;display:flex;gap:12px;align-items:center}
+  .brand{width:44px;height:44px;border-radius:14px;background:conic-gradient(from 200deg,var(--brand1),var(--brand2),#f59e0b,#a78bfa,var(--brand1))}
+  h1{margin:0;font-size:20px}
+  small{opacity:.8}
+
+  .container{max-width:1100px;margin:14px auto;padding:0 12px}
+  .lessonGrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:10px}
+  .lessonCard{background:#fff;border-radius:16px;padding:14px;text-align:center;font-weight:900;box-shadow:var(--cardShadow);cursor:pointer;border:1px solid #eef2ff}
+  .lessonCard.active{background:#fde68a}
+  .lessonCard.unit{background:#e0f2fe}
+
+  .tabs{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}
+  .tabBtn{background:var(--pill); border:none; border-radius:999px; padding:10px 14px; font-weight:900; cursor:pointer; color:#111827}
+  .tabBtn.active{background:var(--pillActive)}
+
+  .panel{background:#fff;border:1px solid #e5e7eb;border-radius:16px;box-shadow:var(--cardShadow);padding:12px;margin-top:12px}
+
+  .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px}
+  .card{border-radius:18px;padding:14px;box-shadow:var(--cardShadow);border:1px solid #eef2ff}
+  .card:nth-child(6n+1){background:#ffd1d1}
+  .card:nth-child(6n+2){background:#ffe1af}
+  .card:nth-child(6n+3){background:#fff4b3}
+  .card:nth-child(6n+4){background:#c9f7dc}
+  .card:nth-child(6n+5){background:#d7ecff}
+  .card:nth-child(6n+6){background:#f3d9ff}
+  .en{font-size:22px;font-weight:900}
+  .ar{margin-top:4px;color:#1f2937}
+  .ex{margin-top:8px;color:#0f172a;opacity:.9}
+  .actions{display:flex;gap:8px;margin-top:10px}
+  .btn{border:none;border-radius:12px;padding:10px 12px;font-weight:900;cursor:pointer}
+  .primary{background:#22c55e;color:#063019}
+  .secondary{background:#dbeafe;color:#0b1220}
+
+  .box{background:#f8fafc;border:1px dashed #cbd5e1;border-radius:14px;padding:12px}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+  .draggable{background:#fde68a;padding:12px;border-radius:12px;text-align:center;font-weight:900;cursor:grab}
+  .dropzone{background:#e2e8f0;padding:12px;border-radius:12px;min-height:52px;border:2px dashed #94a3b8;text-align:center}
+  .dropzone.correct{background:#86efac;border-color:#16a34a}
+
+  .options{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:10px}
+  .opt{border:none;border-radius:12px;padding:14px;font-weight:900;cursor:pointer;color:#0b1220}
+  .opt.correct{outline:4px solid var(--good)}
+  .opt.wrong{outline:4px solid var(--bad); opacity:.75}
+
+  .readingLine{display:flex;justify-content:space-between;align-items:center;background:#f8fafc;border:1px solid #e5e7eb;border-radius:12px;padding:12px;margin-top:8px}
+
+  .confetti{position:fixed;inset:0;pointer-events:none;z-index:100}
+  .piece{position:absolute;width:10px;height:14px;animation:fall 1800ms linear forwards}
+  @keyframes fall{to{transform:translateY(100vh) rotate(720deg);opacity:.25}}
+
+  .toolbar{display:flex;gap:8px;margin:8px 0}
+
+  .grammarBox{display:grid;gap:10px}
+  .gArt{background:#eff6ff;color:#1e40af;border-radius:10px;padding:10px}
+  .gUse{background:#f5f3ff;color:#6d28d9;border-radius:10px;padding:10px}
+  .gTips{background:#ecfdf5;color:#065f46;border-radius:10px;padding:10px}
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;header&gt;
+  &lt;div class="headWrap"&gt;
+    &lt;div class="brand"&gt;&lt;/div&gt;
+    &lt;div&gt;
+      &lt;h1&gt;Unit 6 — Job Hunting | All‑in‑One Lessons Hub&lt;/h1&gt;
+      &lt;small&gt;Prepared by: Ms Asmaa Mahmoud El‑Hagrasy&lt;/small&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/header&gt;
+
+&lt;div class="container"&gt;
+  &lt;div id="lessonGrid" class="lessonGrid"&gt;&lt;/div&gt;
+  &lt;div id="tabs" class="tabs"&gt;&lt;/div&gt;
+  &lt;div id="tabContent"&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="confetti" id="confetti"&gt;&lt;/div&gt;
+
+&lt;script&gt;
+function shuffle(arr){ const a=[...arr]; for(let i=a.length-1;i&gt;0;i--){ const j=Math.floor(Math.random()*(i+1)); [a[i],a[j]]=[a[j],a[i]]; } return a; }
+let voices=[]; function loadVoices(){ voices=speechSynthesis.getVoices(); } window.speechSynthesis.onvoiceschanged=loadVoices; loadVoices();
+function pickBritish(){ const c=(voices||[]).filter(v=&gt;/en-GB|UK|Brit/i.test(v.lang+v.name)); const f=c.find(v=&gt;/Female|Sonia|Hazel|Libby|Serena|Zira|Amy|Emma/i.test(v.name)); return f||c[0]||null; }
+function speak(text, rate=.82){ const u=new SpeechSynthesisUtterance(text); u.rate=rate; u.pitch=1.05; u.lang='en-GB'; const v=pickBritish(); if(v) u.voice=v; speechSynthesis.cancel(); speechSynthesis.speak(u); }
+function cheer(){ const ctx=new (window.AudioContext||window.webkitAudioContext)(); const o=ctx.createOscillator(); const g=ctx.createGain(); o.type='triangle'; o.frequency.value=640; g.gain.value=.06; o.connect(g).connect(ctx.destination); o.start(); setTimeout(()=&gt;o.frequency.value=840,160); setTimeout(()=&gt;o.stop(),360); confetti(); }
+function confetti(){ const c=document.getElementById('confetti'); c.innerHTML=''; for(let i=0;i&lt;40;i++){ const p=document.createElement('div'); p.className='piece'; p.style.left=Math.random()*100+'vw'; p.style.top='-10px'; p.style.background=`hsl(${Math.random()*360},90%,60%)`; p.style.animationDuration=(1200+Math.random()*1200)+'ms'; c.appendChild(p);} setTimeout(()=&gt;c.innerHTML='',2000) }
+
+const lessons = [
+  { id:1, title:'Lesson 1 — The Modern Job Hunt',
+    vocab:[
+      {en:'resume', ar:'سيرة ذاتية', ex:'A strong resume can help you get interviews.'},
+      {en:'polished', ar:'مصقول/احترافي', ex:'Employers prefer a polished resume.'},
+      {en:'footprint', ar:'بصمة رقمية', ex:'Your digital footprint affects job chances.'},
+      {en:'association', ar:'جمعية/رابطة', ex:'Joining an association helps networking.'},
+      {en:'generic', ar:'عام/غير محدد', ex:'Avoid sending a generic resume.'},
+      {en:'approach', ar:'منهج/طريقة', ex:'Choose the right approach for interviews.'},
+      {en:'attitude', ar:'اتّجاه/سلوك', ex:'A positive attitude is important.'},
+    ],
+    reading:[
+      'Today job seekers build a professional online presence.',
+      'Networking and personalized applications increase success.',
+      'Modern interviews can be phone, video, or skills-based.',
+      'Keeping a positive attitude helps in the long run.'
+    ]
+  },
+  { id:2, title:'Lesson 2 — Job Interview (Listening)',
+    vocab:[
+      {en:'department', ar:'قسم', ex:'She works in the sales department.'},
+      {en:'ground', ar:'أساس/أرضية مشتركة', ex:'Find common ground with the team.'},
+      {en:'silos', ar:'عزلة الفرق', ex:'Break down silos to share information.'},
+      {en:'impressive', ar:'مُلفِت/مثير للإعجاب', ex:'He gave an impressive presentation.'},
+      {en:'independently', ar:'بشكل مستقل', ex:'She completes tasks independently.'},
+      {en:'stakeholders', ar:'أصحاب المصلحة', ex:'Stakeholders care about project outcomes.'},
+      {en:'check-ins', ar:'اجتماعات متابعة', ex:'Weekly check-ins track progress.'},
+      {en:'innovative', ar:'مبتكر', ex:'They proposed an innovative idea.'},
+      {en:'implementing', ar:'تنفيذ', ex:'We are implementing the plan.'},
+      {en:'mentor', ar:'مُرشِد', ex:'A mentor supports junior staff.'},
+    ],
+    reading:[
+      'The candidate discusses strengths and future goals.',
+      'Projects require collaboration across departments.',
+      'Use STAR method to answer behavioural questions.'
+    ]
+  },
+  { id:3, title:'Lesson 3 — Career Decisions (Grammar: Articles)', grammar:true,
+    vocab:[
+      {en:'article (a/an/the)', ar:'أداة التعريف/النكرة', ex:'Use a/an/the correctly with nouns.'},
+      {en:'research', ar:'بحث', ex:'Research helps students choose a career.'},
+      {en:'internship', ar:'تدريب', ex:'Internships shape career goals.'},
+      {en:'volunteering', ar:'تطوّع', ex:'Volunteering gives real experience.'},
+    ],
+    reading:[
+      'Self-reflection identifies strengths.',
+      'Research and internships guide better decisions.',
+      'Use a/an/the, or no article, based on context.'
+    ]
+  },
+  { id:4, title:'Lesson 4 — My Resume (Reading)',
+    vocab:[
+      {en:'analysis', ar:'تحليل', ex:'Data analysis improves campaigns.'},
+      {en:'coordinator', ar:'منسّق', ex:'The coordinator keeps teams aligned.'},
+      {en:'promotional', ar:'ترويجي', ex:'They ran promotional activities.'},
+      {en:'collaborated', ar:'تعاون', ex:'She collaborated with the design team.'},
+      {en:'managed', ar:'أدار', ex:'He managed social media accounts.'},
+      {en:'organized', ar:'نظّم', ex:'They organized monthly meetings.'},
+      {en:'assisted', ar:'ساعد', ex:'He assisted customers at the desk.'},
+      {en:'analyzed', ar:'حلّل', ex:'They analyzed the budget.'},
+    ],
+    reading:[
+      'Professional summary highlights skills and achievements.',
+      'Work experience lists responsibilities and results.',
+      'Skills include content creation and data analysis.'
+    ]
+  },
+  { id:5, title:'Lesson 5 — Curriculum Vitae (CV)',
+    vocab:[
+      {en:'personal statement', ar:'بيان شخصي', ex:'Write a short personal statement.'},
+      {en:'education', ar:'تعليم', ex:'List education in reverse chronological order.'},
+      {en:'work experience', ar:'خبرة عملية', ex:'Include relevant jobs and internships.'},
+      {en:'skills', ar:'مهارات', ex:'Add technical and soft skills.'},
+      {en:'references', ar:'مرجعيات', ex:'Provide references if requested.'},
+    ],
+    reading:[
+      'A good CV is clear, short, and relevant.',
+      'Use action verbs to describe achievements.',
+      'Update the CV regularly.'
+    ]
+  }
+];
+
+const BASE_TABS = ['Exam','Games','Reading','Vocabulary'];
+let current = { type:'lesson', id:1, tab:'Vocabulary' };
+
+const lessonGrid = document.getElementById('lessonGrid');
+function renderLessonCards(){ lessonGrid.innerHTML=''; lessons.forEach(ls=&gt;{ const card=document.createElement('div'); card.className='lessonCard'; card.textContent=ls.title; card.onclick=()=&gt;{ current={type:'lesson', id:ls.id, tab: ls.grammar? 'Grammar':'Vocabulary'}; renderTabs(); renderTabContent(); highlightCards(); }; if(current.type==='lesson' && current.id===ls.id) card.classList.add('active'); lessonGrid.appendChild(card); }); const unit=document.createElement('div'); unit.className='lessonCard unit'; unit.textContent='Unit Exam (from page)'; unit.onclick=()=&gt;{ current={type:'unitExam', id:'unit', tab:null}; renderTabs(); renderTabContent(); highlightCards(); }; lessonGrid.appendChild(unit); }
+function highlightCards(){ document.querySelectorAll('.lessonCard').forEach((c,i)=&gt;{ const isUnit=c.classList.contains('unit'); if(!isUnit){ const id=lessons[i].id; c.classList.toggle('active', current.type==='lesson' && current.id===id) } else { c.classList.toggle('active', current.type==='unitExam'); } }); }
+
+const tabsWrap = document.getElementById('tabs');
+function renderTabs(){ tabsWrap.innerHTML=''; if(current.type==='unitExam'){ const b=document.createElement('button'); b.className='tabBtn active'; b.textContent='Unit Exam'; tabsWrap.appendChild(b); return; } const ls=lessons.find(x=&gt;x.id===current.id); const tabs=[...BASE_TABS]; if(ls.grammar){ tabs.push('Grammar','Practice'); } tabs.forEach(name=&gt;{ const b=document.createElement('button'); b.className='tabBtn'; b.textContent=name; b.onclick=()=&gt;{ if(name==='Exam'){ current={type:'unitExam', id:'unit', tab:null}; renderTabs(); renderTabContent(); highlightCards(); } else { current.tab=name; renderTabContent(); setActiveTab(); } }; tabsWrap.appendChild(b); }); current.tab = current.tab || (ls.grammar?'Grammar':'Vocabulary'); setActiveTab(); }
+function setActiveTab(){ document.querySelectorAll('.tabBtn').forEach(b=&gt; b.classList.toggle('active', b.textContent===current.tab)); }
+
+const content = document.getElementById('tabContent');
+function renderTabContent(){ content.innerHTML=''; if(current.type==='unitExam') return renderUnitExam(); const ls=lessons.find(x=&gt;x.id===current.id); if(current.tab==='Vocabulary') return renderVocabulary(ls); if(current.tab==='Reading') return renderReading(ls); if(current.tab==='Games') return renderGames(ls); if(current.tab==='Grammar') return renderGrammar(ls); if(current.tab==='Practice') return renderPractice(ls); }
+
+function renderVocabulary(ls){ const p=document.createElement('div'); p.className='panel'; p.innerHTML='&lt;h2&gt;Vocabulary (EN word + AR meaning) + Dictation&lt;/h2&gt;'; const grid=document.createElement('div'); grid.className='cards'; p.appendChild(grid); ls.vocab.forEach(item=&gt;{ const card=document.createElement('div'); card.className='card'; card.innerHTML=`&lt;div class='en'&gt;${item.en}&lt;/div&gt;&lt;div class='ar'&gt;${item.ar}&lt;/div&gt;&lt;div class='ex'&gt;&lt;i&gt;${item.ex}&lt;/i&gt;&lt;/div&gt;`; const actions=document.createElement('div'); actions.className='actions'; const speakWord=document.createElement('button'); speakWord.className='btn primary'; speakWord.textContent='Pronounce ▶'; speakWord.onclick=()=&gt;speak(item.en,.85); const speakEx=document.createElement('button'); speakEx.className='btn secondary'; speakEx.textContent='Speak Example 🎧'; speakEx.onclick=()=&gt;speak(item.ex,.88); actions.appendChild(speakEx); actions.appendChild(speakWord); card.appendChild(actions); grid.appendChild(card); });
+  const dict=document.createElement('div'); dict.className='panel'; dict.innerHTML = `&lt;h3&gt;✍️ Dictation (AR → EN)&lt;/h3&gt;&lt;div class='box'&gt;Type the &lt;b&gt;English word&lt;/b&gt; when I show the &lt;b&gt;Arabic word&lt;/b&gt;. The word will be pronounced &lt;b&gt;after&lt;/b&gt; a correct answer.&lt;/div&gt;`; const start=document.createElement('button'); start.className='btn primary'; start.textContent='Start Dictation'; dict.appendChild(start); const host=document.createElement('div'); host.className='box'; dict.appendChild(host); let score=0,n=0; start.onclick=()=&gt;{ score=0;n=0; nextQ(); }; function nextQ(){ host.innerHTML=''; const pool=[...ls.vocab]; const q=pool[Math.floor(Math.random()*pool.length)]; n++; const info=document.createElement('div'); info.innerHTML=`&lt;b&gt;الكلمة بالعربي:&lt;/b&gt; ${q.ar}`; host.appendChild(info); const inp=document.createElement('input'); inp.type='text'; inp.placeholder='Type the English word here'; inp.style.cssText='width:100%;padding:10px;margin-top:8px;border-radius:10px;border:1px solid #cbd5e1;font-size:18px;'; host.appendChild(inp); const check=document.createElement('button'); check.className='btn secondary'; check.textContent='Check'; check.onclick=()=&gt;{ const ok=inp.value.trim().toLowerCase()===q.en.toLowerCase(); if(ok){ score++; cheer(); speak(q.en,.85); } else { const tip=document.createElement('div'); tip.style.marginTop='8px'; tip.textContent='Correct: '+q.en; host.appendChild(tip); } if(n&gt;=8){ host.innerHTML += `&lt;div style='margin-top:8px;font-weight:900;color:#16a34a'&gt;Score: ${score} / ${n}&lt;/div&gt;`; } else { nextQ(); } }; host.appendChild(check); }
+  content.appendChild(p); content.appendChild(dict); }
+
+function renderReading(ls){ const p=document.createElement('div'); p.className='panel'; p.innerHTML='&lt;h2&gt;Reading — 6 Sentences&lt;/h2&gt;'; ls.reading.forEach((line,i)=&gt;{ const row=document.createElement('div'); row.className='readingLine'; row.innerHTML=`&lt;div&gt;&lt;b style='color:#2563eb'&gt;Sentence ${i+1}:&lt;/b&gt; ${line}&lt;/div&gt;`; const b=document.createElement('button'); b.className='btn primary'; b.textContent='🔈 British Slow'; b.onclick=()=&gt;speak(line,.82); row.appendChild(b); p.appendChild(row); }); content.appendChild(p); }
+
+function renderGames(ls){ const p=document.createElement('div'); p.className='panel'; p.innerHTML='&lt;h2&gt;Games&lt;/h2&gt;'; const box=document.createElement('div'); box.className='box'; box.innerHTML='&lt;h3&gt;Drag & Drop — Match (AR → EN)&lt;/h3&gt;'; const grid=document.createElement('div'); grid.className='grid2'; box.appendChild(grid); const left=document.createElement('div'); const right=document.createElement('div'); grid.appendChild(left); grid.appendChild(right);
+  const leftItems=shuffle([...ls.vocab]); const rightItems=shuffle([...ls.vocab]);
+  leftItems.forEach(v=&gt;{ const d=document.createElement('div'); d.className='draggable'; d.textContent=v.ar; d.draggable=true; d.dataset.word=v.en.toLowerCase(); d.ondragstart=e=&gt;e.dataTransfer.setData('text/plain',d.dataset.word); left.appendChild(d); });
+  rightItems.forEach(v=&gt;{ const dz=document.createElement('div'); dz.className='dropzone'; dz.textContent=v.en; dz.dataset.target=v.en.toLowerCase(); dz.ondragover=e=&gt;e.preventDefault(); dz.ondrop=e=&gt;{ e.preventDefault(); const w=e.dataTransfer.getData('text/plain'); if(w===dz.dataset.target){ dz.classList.add('correct'); dz.textContent+=' ✅'; cheer(); } else { dz.style.borderColor='#ef4444'; setTimeout(()=&gt;dz.style.borderColor='#94a3b8',600); } }; right.appendChild(dz); });
+  p.appendChild(box);
+  const k=document.createElement('div'); k.className='box'; k.innerHTML='&lt;h3&gt;Quick MCQ (Kahoot style)&lt;/h3&gt;&lt;div id="kq"&gt;&lt;/div&gt;&lt;div id="kScore" style="font-weight:900;color:#16a34a"&gt;Score: 0&lt;/div&gt;'; p.appendChild(k); startKahoot(); function startKahoot(){ let s=0; next(); function next(){ const host=k.querySelector('#kq'); host.innerHTML=''; const pool=[...ls.vocab]; const q=pool[Math.floor(Math.random()*pool.length)]; const wrongs=pool.filter(x=&gt;x.en!==q.en).sort(()=&gt;Math.random()-0.5).slice(0,3); let options=shuffle([q, ...wrongs]); const stem=document.createElement('div'); stem.textContent=`Choose the English word for: "${q.ar}"`; host.appendChild(stem); const opts=document.createElement('div'); opts.className='options'; host.appendChild(opts); options.forEach(o=&gt;{ const b=document.createElement('button'); b.className='opt'; b.textContent=o.en; b.onclick=()=&gt;{ [...opts.children].forEach(btn=&gt; btn.disabled=true); if(o.en===q.en){ b.classList.add('correct'); s++; k.querySelector('#kScore').textContent='Score: '+s; cheer(); setTimeout(next,800);} else { b.classList.add('wrong'); [...opts.children].forEach(btn=&gt;{ if(btn.textContent===q.en) btn.classList.add('correct'); }); } }; opts.appendChild(b); }); } }
+  content.appendChild(p); }
+
+function renderGrammar(ls){ const p=document.createElement('div'); p.className='panel'; p.innerHTML='&lt;h2&gt;Grammar — Articles (a/an/the & no article)&lt;/h2&gt;'; const expl=document.createElement('div'); expl.className='grammarBox'; expl.innerHTML = `
+  &lt;div class='gArt'&gt;&lt;b&gt;Indefinite articles (a/an):&lt;/b&gt; use &lt;b&gt;a&lt;/b&gt; before a consonant sound; &lt;b&gt;an&lt;/b&gt; before a vowel sound. &lt;i&gt;Examples:&lt;/i&gt; a doctor, an honest man.&lt;/div&gt;
+  &lt;div class='gUse'&gt;&lt;b&gt;Definite article (the):&lt;/b&gt; use for something specific or unique; and before musical instruments & superlatives. &lt;i&gt;Examples:&lt;/i&gt; the Nile River, play the guitar, the highest mountain.&lt;/div&gt;
+  &lt;div class='gTips'&gt;&lt;b&gt;No article:&lt;/b&gt; plural/uncountable in general, and some fixed expressions. &lt;i&gt;Examples:&lt;/i&gt; I like tea, Mount Everest is the highest mountain.&lt;/div&gt;`; p.appendChild(expl);
+  const q=document.createElement('div'); q.className='box'; p.appendChild(q);
+  grammarItems().forEach(item=&gt;{ const it=document.createElement('div'); it.style.margin='10px 0'; it.innerHTML=`&lt;div&gt;${item.stem}&lt;/div&gt;`; const opts=document.createElement('div'); opts.className='options'; it.appendChild(opts); shuffle(item.opts).forEach(o=&gt;{ const b=document.createElement('button'); b.className='opt'; b.textContent=o; b.onclick=()=&gt;{ [...opts.children].forEach(btn=&gt; btn.disabled=true); if(o===item.ans){ b.classList.add('correct'); cheer(); } else { b.classList.add('wrong'); [...opts.children].forEach(btn=&gt;{ if(btn.textContent===item.ans) btn.classList.add('correct'); }); } }; opts.appendChild(b); }); q.appendChild(it); });
+  content.appendChild(p); }
+
+function grammarItems(){ return [
+  {stem:'(1) He wrote ______ impressive resume.', opts:['a','an','the','no article'], ans:'an'},
+  {stem:'(2) She plays ______ guitar professionally.', opts:['a','an','the','no article'], ans:'the'},
+  {stem:'(3) Mount Everest is ______ highest mountain in the world.', opts:['a','an','the','no article'], ans:'the'},
+  {stem:'(4) I need ______ pen to sign the document.', opts:['a','an','the','no article'], ans:'a'},
+  {stem:'(5) He is ______ honest man.', opts:['a','an','the','no article'], ans:'an'},
+  {stem:'(6) She works in ______ hospital downtown.', opts:['a','an','the','no article'], ans:'the'},
+  {stem:'(7) The Nile River is ______ longest river in Africa.', opts:['a','an','the','no article'], ans:'the'},
+  {stem:"(8) I don't like ______ tea.", opts:['a','an','the','no article'], ans:'no article'},
+  {stem:"(9) He's ______ doctor I told you about.", opts:['a','an','the','no article'], ans:'the'},
+  {stem:'(10) She speaks ______ French and Spanish.', opts:['a','an','the','no article'], ans:'no article'},
+]; }
+
+function renderPractice(ls){ const p=document.createElement('div'); p.className='panel'; p.innerHTML='&lt;h2&gt;Practice — Fill the Blanks with a/an/the or no article&lt;/h2&gt;'; const items=[
+  {stem:'He is a honest man.', fix:'He is an honest man.'},
+  {stem:'I want to buy an new car.', fix:'I want to buy a new car.'},
+  {stem:'A birds sing in the morning.', fix:'Birds sing in the morning.'},
+  {stem:"He's doctor.", fix:'He is a doctor.'},
+  {stem:'A moon is beautiful tonight.', fix:'The moon is beautiful tonight.'},
+  {stem:'She gave me an advice.', fix:'She gave me some advice.'},
+  {stem:'I need the pen to write.', fix:'I need a pen to write.'},
+  {stem:'Sun rises in the east.', fix:'The sun rises in the east.'},
+  {stem:'They live in the London.', fix:'They live in London.'},
+  {stem:'We met on the Monday.', fix:'We met on Monday.'},
+]; items.forEach((it,i)=&gt;{ const row=document.createElement('div'); row.className='box'; row.style.margin='8px 0'; row.innerHTML=`&lt;div&gt;&lt;b&gt;${i+1}.&lt;/b&gt; ${it.stem}&lt;/div&gt;`; const show=document.createElement('button'); show.className='btn secondary'; show.textContent='Show Answer'; show.onclick=()=&gt;{ const tip=document.createElement('div'); tip.style.marginTop='6px'; tip.innerHTML='&lt;b&gt;✔ '+it.fix+'&lt;/b&gt;'; row.appendChild(tip); cheer(); show.disabled=true; }; row.appendChild(show); p.appendChild(row); }); content.appendChild(p); }
+
+// ----- UNIT EXAM from provided page -----
+const examVocab = [
+  {stem:'1. A well-written ______ can help you get an interview.', opts:['resume','attitude','skills','generic'], ans:'resume'},
+  {stem:'2. Employers prefer a ______ resume that looks professional.', opts:['polished','generic','footprint','approach'], ans:'polished'},
+  {stem:'3. Your digital ______ can affect your job chances.', opts:['footprint','resume','attitude','association'], ans:'footprint'},
+  {stem:'4. Joining an ______ can help you build connections.', opts:['association','candidate','approach','skills'], ans:'association'},
+  {stem:'5. Avoid sending the same ______ resume to all employers.', opts:['generic','polished','resume','attitude'], ans:'generic'},
+  {stem:'6. A positive ______ is important during job hunting.', opts:['attitude','resume','skills','footprint'], ans:'attitude'},
+  {stem:'7. The ______ should prepare well for the interview.', opts:['candidate','resume','approach','association'], ans:'candidate'},
+  {stem:'8. Prepare for the job ______ by practicing questions.', opts:['interview','resume','skills','footprint'], ans:'interview'},
+  {stem:'9. Communication ______ are essential for success.', opts:['skills','resume','generic','attitude'], ans:'skills'},
+  {stem:'10. Choose the right ______ to answer behavioral questions.', opts:['approach','resume','polished','candidate'], ans:'approach'},
+];
+const examGrammar = grammarItems();
+
+function renderUnitExam(){ const p=document.createElement('div'); p.className='panel'; p.innerHTML='&lt;h2&gt;Unit Exam — 20 MCQs (from the page)&lt;/h2&gt;'; const tb=document.createElement('div'); tb.className='toolbar'; p.appendChild(tb); const start=document.createElement('button'); start.className='btn primary'; start.textContent='Start Exam'; tb.appendChild(start); const restart=document.createElement('button'); restart.className='btn secondary'; restart.textContent='Restart Exam'; tb.appendChild(restart); const host=document.createElement('div'); host.className='box'; p.appendChild(host); content.appendChild(p);
+  let score=0, qn=0, seq=[]; function init(){ score=0; qn=0; seq=[...examVocab, ...examGrammar]; next(); }
+  function next(){ host.innerHTML=''; if(qn&gt;=seq.length){ finish(); return; } const q=seq[qn]; qn++; const stem=document.createElement('div'); stem.innerHTML=`&lt;h4&gt;Question ${qn} of ${seq.length}&lt;/h4&gt;&lt;div&gt;${q.stem}&lt;/div&gt;`; host.appendChild(stem); const opts=document.createElement('div'); opts.className='options'; host.appendChild(opts); shuffle(q.opts).forEach(o=&gt;{ const b=document.createElement('button'); b.className='opt'; b.textContent=o; b.onclick=()=&gt;{ [...opts.children].forEach(btn=&gt; btn.disabled=true); if(o===q.ans){ score++; b.classList.add('correct'); cheer(); setTimeout(next,800);} else { b.classList.add('wrong'); [...opts.children].forEach(btn=&gt;{ if(btn.textContent===q.ans) btn.classList.add('correct'); }); const tip=document.createElement('div'); tip.style.marginTop='8px'; tip.textContent='Correct answer: '+q.ans; host.appendChild(tip); setTimeout(next,1100);} sc.textContent='Score: '+score+' / '+seq.length; }; opts.appendChild(b); }); const sc=document.createElement('div'); sc.style.fontWeight='900'; sc.style.color='var(--good)'; sc.textContent='Score: '+score+' / '+seq.length; host.appendChild(sc); }
+  function finish(){ host.innerHTML += `&lt;div&gt;&lt;h3&gt;Exam Finished ✅&lt;/h3&gt;&lt;div style='font-weight:900;color:#16a34a'&gt;Your score: ${score} / ${seq.length}&lt;/div&gt;&lt;/div&gt;`; }
+  start.onclick=init; restart.onclick=init; }
+
+// Init
+renderLessonCards(); renderTabs(); renderTabContent();
+&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre></section><section id="exam" class="card"><h2>Exam</h2><p>Press Start Exam from the panel.</p></section></body></html>

@@ -1,0 +1,3 @@
+let preferredVoice=null;function loadVoices(){const v=speechSynthesis.getVoices();preferredVoice=v.find(vv=>/en-GB/i.test(vv.lang)&&/female|Google UK|Serena|Alice/i.test(vv.name))||v.find(vv=>/en-GB/i.test(vv.lang))||v[0]||null;}window.speechSynthesis.onvoiceschanged=loadVoices;loadVoices();
+export function speak(text){if(!('speechSynthesis'in window))return;const u=new SpeechSynthesisUtterance(text);u.voice=preferredVoice||null;u.rate=0.9;u.pitch=1;try{speechSynthesis.cancel();}catch(e){}speechSynthesis.speak(u)}
+export function attachWordTTS(root){root.querySelectorAll('[data-word]').forEach(el=>{el.style.cursor='pointer';el.addEventListener('click',()=>{speak(el.dataset.word);const s=new Audio('assets/audio/sfx-click.mp3');s.play().catch(()=>{});});});}
