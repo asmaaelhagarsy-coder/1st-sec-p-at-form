@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>21st Sec First Term</title>
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/themes.css">
+</head>
+<body class="theme-purple">
+  <header class="hero">
+    <h1>21st Sec First Term</h1>
+    <nav class="units-nav" id="unitsNav"></nav>
+  </header>
+  <main id="content" aria-live="polite">
+    <div class="tabs">
+      <button class="tab active" data-tab="vocab">Vocabulary</button>
+      <button class="tab" data-tab="games">Games</button>
+      <button class="tab" data-tab="reading">Reading</button>
+      <button class="tab" data-tab="grammar">Grammar</button>
+      <button class="tab" data-tab="exam">Exam</button>
+    </div>
+    <section id="panel" class="panel">
+      <div class="placeholder">Select a unit to load its content…</div>
+    </section>
+  </main>
+  <footer>
+    <small>Built for mobile • British female TTS • Offline ready</small>
+  </footer>
+  <script type="module" src="assets/js/app.js"></script>
+  <script>if('serviceWorker' in navigator){navigator.serviceWorker.register('./sw.js').catch(()=>{});}</script>
+</body>
+</html>
